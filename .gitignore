@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+var/
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+local_settings.py
+.DS_Store
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# PyBuilder
+target/
+
+# pyenv
+.python-version
+
+# virtualenv
+.venv/
+ENV/
+
+# Ignore IDE setup files
+.idea/*
+.vscode/*
+
+#Ignore test logs
+#**/automation.log
+
+#Reports
+#reports/screenshots/*
+#reports/*.*
+
+#resources
+#resources/chromedriver
+
+#Ignore pipenv files
+Pipfile.lock
+
+#Ignore node-modules
+node_modules/*
+
+#Config files
+#configs/*/**.yml
+#**.cfg
