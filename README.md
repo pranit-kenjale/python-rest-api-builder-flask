@@ -1,5 +1,5 @@
 # Python REST API builder via flask.
-Create and build APIs to perform CRUD operations for a home automation scenario leveraging PYTHON and FLASK.
+Create and build APIs to perform CRUD operations for a home automation scenario leveraging PYTHON and FLASK in docker container(s).
 
 
 # Device Registry Service
@@ -29,13 +29,13 @@ Subsequent response definitions will only detail the expected value of `data fie
   {
     "identifier": "floor-lamp",
     "name": "Floor Lamp",
-    "device-type": "switch",
+    "device_type": "switch",
     "controller_gateway": "192.1.68.0.2"
   },
   {
     "identifier": "samsung-tv",
     "name": "Samsung TV",
-    "device-type": "tv",
+    "device_type": "tv",
     "controller_gateway": "192.1.68.0.9"
   } 
 ]
@@ -64,7 +64,7 @@ If a device with the given identifier already exists, the existing device will b
   {
     "identifier": "floor-lamp",
     "name": "Floor Lamp",
-    "device-type": "switch",
+    "device_type": "switch",
     "controller_gateway": "192.1.68.0.2"
   }
 ```
@@ -82,7 +82,7 @@ If a device with the given identifier already exists, the existing device will b
   {
     "identifier": "floor-lamp",
     "name": "Floor Lamp",
-    "device-type": "switch",
+    "device_type": "switch",
     "controller_gateway": "192.1.68.0.2"
   }
 ```
