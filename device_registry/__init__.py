@@ -46,10 +46,14 @@ class DeviceList(Resource):
 
     def get(self):
         shelf = get_db()
+        # Get set of all keys from shelve db and convert to list
         keys = list(shelf.keys())
+        print("Keys List: ", keys)
 
+        # List to hold all the devices
         devices = []
 
+        # Loop over all keys and append their details to the 'devices' list
         for key in keys:
             devices.append(shelf[key])
 
@@ -68,6 +72,7 @@ class DeviceList(Resource):
         args = parser.parse_args()
 
         shelf = get_db()
+        # Store each POST request data in shelf with 'identifier' as the key
         shelf[args['identifier']] = args
 
         # For success return 201, Created
