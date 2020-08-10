@@ -15,7 +15,7 @@ All responses will have the form -
 ```
 Subsequent response definitions will only detail the expected value of `data field`.
 
-### List all devices
+## List all devices
 
 **Definition**
 
@@ -41,7 +41,7 @@ Subsequent response definitions will only detail the expected value of `data fie
 ]
 ```
 
-### Registering new device
+## Registering new device
 
 **Definition**
 
@@ -98,3 +98,7 @@ If a device with the given identifier already exists, the existing device will b
 - `404 Not Found` if the device does not exist
 - `204 No Content` on success
 
+## Docker Run Commands
+
+- docker-compose up
+- docker-compose up --build [Rebuild image]
